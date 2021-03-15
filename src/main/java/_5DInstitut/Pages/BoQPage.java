@@ -1,24 +1,12 @@
 package _5DInstitut.Pages;
 
-import java.io.File;
-import java.util.Iterator;
-import java.util.Set;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import com.fasterxml.jackson.annotation.JsonTypeInfo.As;
-import com.paulhammant.ngwebdriver.ByAngularButtonText;
-
 import _5DInstitut.ConfigReader.ConfigDataProvider;
-import _5DInstitut.Utilities.FileUploader;
 import _5DInstitut.Utilities.Interact;
 
 public class BoQPage extends Interact {

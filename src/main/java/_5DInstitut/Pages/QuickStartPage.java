@@ -26,7 +26,7 @@ public class QuickStartPage extends Interact{
 		WebElement moduleClick = driver.findElement(By.xpath("//button[normalize-space()='"+modulename+"']"));
 		Thread.sleep(1000);
 		moduleClick.click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 	}
 	
 }
