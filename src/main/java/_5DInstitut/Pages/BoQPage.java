@@ -89,11 +89,7 @@ public class BoQPage extends Interact {
 	@FindBy (xpath = "//button[contains(@data-lookup-show,'settings.showEditButton')]") WebElement DropDownArrow;
 
 	public void PopUp_GAEBImport() throws Exception {
-		/*
-		 * Set<String> s1=driver.getWindowHandles(); Iterator<String> i1=s1.iterator();
-		 * String ChildWindow=i1.next(); String MainWindow=driver.getWindowHandle();
-		 * driver.switchTo().window(ChildWindow);
-		 */
+	
 		SwitchToPopUp();
 
 		for (int i=1;i<=2;i++) {
@@ -138,14 +134,6 @@ public class BoQPage extends Interact {
 	public void PopUp_2_GEABImport() throws Exception {
 		Thread.sleep(3000);
 		SwitchToPopUp();
-//		Thread.sleep(1000);
-//		clickOnElement(row_1);
-//		clickOnElement(DropDownArrow);
-//		clickOnElement(IgnoreClk);
-//		Thread.sleep(1000);
-//		clickOnElement(row_2);
-//		clickOnElement(DropDownArrow);
-//		clickOnElement(IgnoreClk);
 		Thread.sleep(1000);
 		clickOnElement(row_3);
 		clickOnElement(DropDownArrow);
@@ -167,7 +155,6 @@ public class BoQPage extends Interact {
 	}
 
 	@FindBy (xpath = "//div[@id='ac4a13a8f33540ed80d0d9f67983fa01']/div[4]/div[3]/div[1]/div[3]/div/div[1]") WebElement SelectBoQ_1;
-	//@FindBy (xpath = "//div[@id='ac4a13a8f33540ed80d0d9f67983fa01']/div[4]/div[3]/div[1]/div[3]/div/div[2]") WebElement SelectBoQ_2;
 	@FindBy (xpath = "//button[contains(@title,'Open BoQ')]") WebElement GoToBoQ;
 	public void GoToBoQ_1() throws Exception {
 		clickOnElement(SelectBoQ_1);
@@ -175,10 +162,6 @@ public class BoQPage extends Interact {
 		Thread.sleep(3000);
 	}
 
-	/*
-	 * public void GoToBoQ_2() throws Exception { clickOnElement(SelectBoQ_2);
-	 * clickOnElement(GoToBoQ); Thread.sleep(3000); }
-	 */
 
 	@FindBy (xpath = "//div[contains(@data-ng-animate,\"{enter: 'animate-enter', leave: 'animate-leave'}\")]//li[4]//button[1]") WebElement DeleteBoQ;
 	@FindBy (xpath ="//button[@title='Unsaved Data']") WebElement UnsavedClick;
